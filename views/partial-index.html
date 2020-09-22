@@ -1,4 +1,23 @@
-<form>
-    <a href='/users/login'><h3>Login</h3></a>
-    <a href='/users/signup'><h3>SignUp</h3></a>
+<form action="/users/login" method="POST" class="form">
+    <h3>Login Up</h3>
+    <label>Email:</label>
+    <input type="email" name="reviewer_email"><br>
+    <label>password:</label>
+    <input type="password" name="password">
+    <button type="submit" class="button is-primary">
+        Login
+    </button>
+</form>
+
+<form action="/users/signup" method="POST" class="form">
+    <h3>Sign Up</h3>
+    <label>Name:</label>
+    <input type="text" name="reviewer_name"><br>
+    <label>Email:</label>
+    <input type="email" name="reviewer_email"><br>
+    <label>Password:</label>
+    <input type="password" name="password">
+    <button type="submit">
+        Signup
+    </button>
 </form>
